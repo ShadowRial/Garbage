@@ -1,0 +1,152 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Saap - Sass Landing HTML Template
+    Template URI: site.com
+    Description: Saap - Sass Landing HTML Template
+    Author: WebTend 
+    Author URI: https://webtend.net/
+    Version: 1.0
+
+
+--------------------------
+    CSS INDEX
+--------------------------
+    01.Theme Common CSS
+        # Google Fonts
+        # Base CSs
+        # Othres common
+        # All BG
+        # All color
+        # All Button
+        # Animated
+        # Preloader
+        # Search Modal
+        # Back to top
+    02. Header CSs
+        # Transparent Header
+        # Header Navigation
+        # Navigation Purple
+        # Navigation White
+        # Sticky Header
+    03. Hero CSS
+        # Hero One 
+        # Hero Two
+        # Hero Three
+        # Breadcrumbs
+    04. About CSS
+    05. Features CSS
+    06. Block CSS
+        # Block Icon Animate
+        # Block one
+        # Block Two
+        # Block Three
+        # Block Four
+        # Block Five
+        # Block Six
+        # Block Seven
+        # Block Eight
+        # Block Icon Left
+        # Block Check Item
+    07. Service CSS 
+    08. Elements CSS
+        # Fancy Text Block Common
+            # Fancy Text Block one
+            # Fancy Text Block two
+            # Fancy Text Block three
+            # Fancy Text Block four
+            # Fancy Text Block five
+            # Fancy Text Block six
+            # Fancy Text Block seven
+            # Fancy Text Block eight
+        # Counter CSS
+        # CTA Area
+            # CTA One
+            # CTA Two
+            # CTA Three
+        # Pagination
+    09. Pricing CSS
+        # Check List
+        # Switch Toggle
+        # Pricing One
+        # Pricing Two
+    10. Portfolio CSS
+        # Portfolio One
+        # Portfolio Details
+    11. Testimonial CSS
+        # Testimonial One
+        # Testimonial Two
+        # Testimonial Threee
+    12. Team CSS
+        # Team One
+        # Team Details
+    13. Faq CSS
+    14. Blog CSS
+        # Post Meta
+        # Blog Two Column
+        # Blog Three Column
+        # Blog Standard
+        # Blog Details
+        # Sidebar Widget
+    15. Contact CSS
+        # Contact form
+        # Contact Information
+        # Contact One
+        # Contact Two
+        # Contact Map Page
+    16. Footer CSS
+        # Footer Area
+        # Footer Default
+        # Footer White
+-----------------------------------------------------------------------------------*/
+
+@import 'variables';
+@import 'mixin';
+
+
+//common
+@import 'common';
+
+//Header
+@import 'header';
+
+//Hero
+@import 'hero';
+
+//About
+@import 'about';
+
+//Features
+@import 'features';
+
+//Features
+@import 'block';
+
+// Service 
+@import 'service';
+
+//Elements
+@import 'elements';
+
+//Elements
+@import 'pricing';
+
+//Portfolio
+@import 'portfolio';
+
+//Testimonial
+@import 'testimonial';
+
+//Team
+@import 'team';
+
+//FAQ
+@import 'faq';
+
+//Blog
+@import 'blog';
+
+//Contact
+@import 'contact';
+
+//Footer
+@import 'footer';

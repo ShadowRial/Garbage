@@ -1,0 +1,69 @@
+
+/*=========================
+    13. Start FAQ css 
+==========================*/
+
+.faq-accordian{
+    & .card{
+        border-radius: 0;
+        border: none;
+        box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.05);
+        & .card-header{
+            padding: 0;
+            border-radius: 4px;
+            border: none;
+            background-color: #fff;
+            & a{
+                display: flex;
+                align-items: center;
+                padding: 20px 30px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                color: $heading;
+                cursor: pointer;
+                @media #{$xs}{
+                    padding: 20px 15px;
+                }
+                & i{
+                    flex: 0 0 30px;
+                    max-width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    font-size: 14px;
+                    margin-right: 15px;
+                    &.bg-one{
+                        background: $purple-dark;
+                    }
+                    &.bg-two{
+                        @extend %gradient-bg-yellow;
+                    }
+                }
+            }
+        }
+        & .card-header a[aria-expanded]{
+            &:after{
+                content: '\f067';
+                font-family: 'Font Awesome 5 Pro';
+                font-weight: 400;
+                font-size: 22px;
+                margin-left: auto;
+            }
+        }
+        & .card-header a[aria-expanded=true]{
+            &:after{
+                content: '\f068';
+            }
+        }
+        & .card-body{
+            padding: 0 30px 20px 75px;
+            @media #{$xs}{
+                padding: 0 30px 20px 60px;
+            }
+        }
+    }
+}

@@ -1,0 +1,171 @@
+
+
+/*=========================
+    10. Start Portfolio css 
+==========================*/
+
+/* portfolio One */
+
+.portfolio-slider-one{
+    margin-left: -15px;
+    margin-right: -15px;
+    & .portfolio-style-one{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    & ul.slick-dots{
+        text-align: center;
+        margin-top: 50px;
+        & li{
+            position: relative;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            @extend %gradient-bg-yellow;
+            margin-left: 7px;
+            margin-right: 7px;
+            z-index: 1;
+            &.slick-active{
+                &:after{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+            &:after{
+                position: absolute;
+                top: 0;
+                content: '';
+                width: 22px;
+                height: 22px;
+                margin-left: -11px;
+                margin-top: -7px;
+                border-radius: 50%;
+                border: 1px solid $yellow-dark;
+                visibility: hidden;
+                opacity: 0;
+                @include transition(.3s);
+            }
+        }
+    }
+}
+
+.portfolio-style-one{
+    &:hover{
+        & .portfolio-holder{
+            & .portfolio-hover{
+                visibility: visible;
+                opacity: 1;
+                & .hover-content{
+                    @include transform(translateY(0px));
+                }
+            }
+        }
+    }
+    & .portfolio-holder{
+        position: relative;
+        overflow: hidden;
+        & img{
+            width: 100%;
+            border-radius: 5px;
+        }
+        & .portfolio-hover{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 20, 38, 0.7);
+            border-radius: 5px;
+            padding: 40px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            visibility: hidden;
+            opacity: 0;
+            @include transition(.3s);
+            @media #{$lg}{
+                padding: 30px 20px;
+            }
+            @media #{$xm}{
+                padding: 30px;
+            }
+            @media #{$xss}{
+                padding: 30px 15px;
+            }
+            & .hover-content{
+                background: linear-gradient(90deg, #DC3545 -37.5%, #FD7E14 100%);
+                border-radius: 5px;
+                padding: 28px 30px 30px;
+                @include transform(translateY(-20px));
+                @include transition(.4s);
+                @media #{$lg}{
+                    padding: 28px 20px 30px;
+                }
+                @media #{$xss}{
+                    padding: 28px 20px 30px;
+                }
+                & h3.title{
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #fff;
+                    margin-bottom: 5px;
+                }
+                & p{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+/* portfolio Details */
+
+.portfolio-details-wrapper{
+    border-bottom: 1px solid #E7E7E9;
+    padding-bottom: 35px;
+    & .portfolio-img{
+        img{
+            border-radius: 5px;
+        }
+    }
+    & .portfolio-content{
+        & h3.title{
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+        & p{
+            margin-bottom: 55px;
+        }
+        & .block-check-item{
+            & .text{
+                & p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        & .project-info-box{
+            padding: 30px 40px 35px;
+            background-color: #fff;
+            box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.05);
+            border-radius: 5px;
+            & h4.title{
+                margin-bottom: 28px;
+            }
+            & p{
+                margin-bottom: 0;
+            }
+            & ul{
+                & li{
+                    margin-bottom: 5px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

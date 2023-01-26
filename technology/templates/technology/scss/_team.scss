@@ -1,0 +1,177 @@
+
+/*=========================
+    12. Start Team css 
+==========================*/
+
+/* Team One CSS */ 
+
+.team-style-one{
+    & .team-item{
+        &:hover{
+            & .img-holder{
+                & .team-hover{
+                    visibility: visible;
+                    opacity: 1;
+                    & .hover-content{
+                        @include transform(translateY(0px));
+                    }
+                }
+            }
+        }
+        & .img-holder{
+            position: relative;
+            overflow: hidden;
+            & img{
+                border-radius: 5px;
+                width: 100%;
+            }
+            & .team-hover{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding: 50px 30px 40px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                background: linear-gradient(180deg, rgba(10, 20, 38, 0.24) 0%, #0A1426 100%);
+                border-radius: 5px;
+                visibility: hidden;
+                opacity: 0;
+                @include transition(.3s);
+                & .hover-content{
+                    @include transform(translateY(20px));
+                    @include transition(.35s);
+                    & ul.social-link{
+                        margin-bottom: 25px;
+                        & li{
+                            margin-left: 4px;
+                            margin-right: 4px;
+                            & a{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                background-color: #fff;
+                                color: $heading;
+                                @include transition(.3s);
+                                &:hover{
+                                    background-color: $blue-dark;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                    & h5{
+                        color: #fff;
+                        text-transform: capitalize;
+                    }
+                    & p{
+                        color: #fff;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Team Details */ 
+.team-details-wrapper{
+    & .team-content{
+        & h3.title{
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 10px;
+        }
+        & p.position{
+            color: $yellow-dark;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 26px;
+            margin-bottom: 25px;
+        }
+        & p{
+            margin-bottom: 25px;
+        }
+        & .information-item{
+            & .icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 0 0 60px;
+                max-width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: #f8f8f8;
+                font-size: 22px;
+                color: $yellow-dark;
+                margin-right: 20px;
+            }
+            & .text{
+                & h4{
+                    margin-bottom: 5px;
+                    font-weight: 600;
+                }
+                & p{
+                    margin-bottom: 0;
+                    color: $heading;
+                    font-weight: 500;
+                    &:hover{
+                        & a{
+                            color: $yellow-dark;
+                        }
+                    }
+                }
+            }
+        }
+        & .social-box{
+            padding-top: 30px;
+            border-top: 1px solid  #C4C4C4;
+            & h5{
+                margin-bottom: 25px;
+            }
+            & ul.social-link{
+                & li{
+                    & a{
+                        position: relative;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #f8f8f8;
+                        color: $heading;
+                        z-index: 1;
+                        @include transition(.3s);
+                        &:hover{
+                            color: #fff;
+                            &:after{
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                        &:after{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            content: '';
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                            background: linear-gradient(90deg, #DC3545 -37.5%, #FD7E14 100%);
+                            visibility: hidden;
+                            opacity: 0;
+                            z-index: -1;
+                            @include transition(.35s);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

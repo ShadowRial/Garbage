@@ -1,0 +1,353 @@
+
+/*=========================
+    03. Start Hero css 
+==========================*/
+
+/* Hero One */
+.hero-style-one{
+    position: relative;
+    padding: 232px 0 70px;
+    z-index: 1;
+    overflow: hidden;
+    & .hero-shape{
+        position: absolute;
+        z-index: -1;
+        & span{
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+        &.shape-one{
+            top: 17%;
+            right: 22%;
+            & span{
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &.shape-two{
+            right: 17%;
+            bottom: 20%;
+            & span{
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &.shape-three{
+            left: -200px;
+            bottom: 0;
+            & span{
+                width: 600px;
+                height: 600px;
+            }
+        }
+    }
+    & .hero-content{
+        margin-bottom: 120px;
+        & h1{
+            color: #fff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            @media #{$lg}{
+                font-size: 52px;
+                line-height: 65px;
+            }
+            @media #{$xm}{
+                font-size: 42px;
+                line-height: 55px;
+            }
+            @media #{$xs}{
+                font-size: 32px;
+                line-height: 45px;
+            }
+        }
+    }
+}
+
+/* Hero Two */
+
+.hero-style-two{
+    position: relative;
+    padding: 265px 0 175px;
+    overflow: hidden;
+    z-index: 1;
+    & .shape{
+        position: absolute;
+        & span{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        &.shape-one{
+            bottom: 40%;
+            left: 7%;
+            & span{
+                border: 5px solid #5956E9;
+                background-color: #fff;
+                filter: drop-shadow(0px 10px 50px rgba(48, 117, 255, 0.5));
+            }
+        }
+        &.shape-two{
+            top: 27%;
+            left: 40%;
+            & span{
+                background-color: #fff;
+                border: 5px solid #9E59FF;
+                filter: drop-shadow(0px 10px 50px rgba(48, 117, 255, 0.5));
+            }
+        }
+        &.shape-three{
+            bottom: 150px;
+            left: 24%;
+            & span{
+                border: 3px solid #5956E9;
+                background-color: #fff;
+            }
+        }
+    }
+    & .curve-one{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        & path{
+            fill: rgba(88, 86, 233, 0.05);
+        }
+    }
+    &:before{
+        position: absolute;
+        content: '';
+        top: -150px;
+        left: -100px;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 1px dashed $heading;
+        z-index: -1;
+    }
+    & .hero-content{
+        padding-right: 80px;
+        @media #{$xm}{
+            padding-right: 0;
+        }
+        & h1{
+            font-size: 50px;
+            line-height: 65px;
+            padding-right: 80px;
+            margin-bottom: 25px;
+            @media #{$xs}{
+                font-size: 28px;
+                line-height: 40px;
+                padding-right: 0;
+            }
+        }
+        & p{
+            margin-bottom: 45px;
+        }
+    }
+    & .hero-img{
+        position: absolute;
+        top: 220px;
+        right: 120px;
+        @media #{$lp}{
+            right: 0;
+        }
+        @media #{$lg}{
+            display: none;
+        }
+        @media #{$xm}{
+            display: none;
+        }
+    }
+}
+
+/* Hero Three */
+
+.hero-style-three{
+    position: relative;
+    padding: 277px 0 190px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    @media #{$xs}{
+        padding: 177px 0 0px;
+    }
+    & .shape{
+        position: absolute;
+        z-index: -1;
+        & span{
+            border-radius: 50%;
+        }
+        &.shape-one{
+            top: 200px;
+            left: 235px;
+            & span{
+                width: 80px;
+                height: 80px;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(110.75deg, #1A0079 8.61%, #2F75FF 104.58%);
+            }
+        }
+        &.shape-two{
+            bottom: 165px;
+            left: 8%;
+            & span{
+                width: 40px;
+                height: 40px;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(110.75deg, #1A0079 8.61%, #2F75FF 104.58%);
+            }
+        }
+        &.shape-three{
+            bottom: 35%;
+            left: 40%;
+            & span{
+                width: 25px;
+                height: 25px;
+                background: linear-gradient(180deg, #407BFF 0%, rgba(64, 123, 255, 0) 100%);
+            }
+        }
+        &.shape-four{
+            bottom: 50px;
+            right: -170px;
+            & span{
+                width: 655px;
+                height: 655px;
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0) 14.58%, #FFFFFF 145.27%);
+                opacity: 0.5;
+            }
+        }
+    }
+    & .hero-content{
+        @media #{$xm}{
+            margin-bottom: 40px;
+        }
+        & span{
+            &.sub-title{
+                color: #fff;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+        }
+        & h1{
+            margin-bottom:25px;
+            color: #fff;
+            @media #{$lg}{
+                font-size: 42px;
+                line-height: 55px;
+            }
+            @media #{$md}{
+                font-size: 32px;
+                line-height: 45px;
+            }
+            @media #{$xs}{
+                font-size: 28px;
+                line-height: 40px;
+            }
+        }
+        & p{
+            color: #fff;
+            margin-bottom: 40px;
+        }
+    }
+    & .hero-img{
+        & img{
+            max-width: 635px;
+        }
+        @media #{$lg}{
+            & img{
+                max-width: 100%;
+            }
+        }
+        @media #{$xm}{
+            & img{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+/* Hero Breadcrumbs */
+
+.breadcrumbs-wrapper{
+    position: relative;
+    padding: 225px 0 140px;
+    z-index: 1;
+    overflow: hidden;
+    & .shape{
+        position: absolute;
+        z-index: -1;
+        & span{
+            border-radius: 50%;
+        }
+        &.shape-one{
+            left: 265px;
+            & span{
+                width: 80px;
+                height: 80px;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(110.75deg, #1A0079 8.61%, #2F75FF 104.58%);
+            }
+        }
+        &.shape-two{
+            top: 165px;
+            left: 35%;
+            & span{
+                width: 40px;
+                height: 40px;
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(110.75deg, #1A0079 8.61%, #2F75FF 104.58%);
+            }
+        }
+        &.shape-three{
+            bottom: 100px;
+            right: 20%;
+            & span{
+                width: 25px;
+                height: 25px;
+                background: linear-gradient(180deg, #407BFF 0%, rgba(64, 123, 255, 0) 100%);
+            }
+        }
+        &.shape-four{
+            bottom: -190px;
+            right: -100px;
+            & span{
+                width: 450px;
+                height: 450px;
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0) 14.58%, #FFFFFF 145.27%);
+                opacity: 0.5;
+            }
+        }
+    }
+    & .page-title-text{
+        & h1{
+            color: #fff;
+            font-size: 50px;
+            line-height: 60px;
+            margin-bottom: 10px;
+            @media #{$xs}{
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        & ul.breadcrumbs-link{
+            & li{
+                display: inline-block;
+                color: #fff;
+                &:after{
+                    display: inline-block;
+                    content: '';
+                    margin-left: 8px;
+                    margin-right: 5px;
+                    width: 5px;
+                    height: 2px;
+                    background-color: #fff;
+                    vertical-align: middle;
+                }
+                &:last-child{
+                    &:after{
+                        display: none;
+                    }
+                }
+                &.active{
+                    color: $yellow-dark;
+                }
+            }
+        }
+    }
+}

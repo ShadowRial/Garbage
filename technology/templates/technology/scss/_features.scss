@@ -1,0 +1,62 @@
+
+
+/*=========================
+    05. Start Features css 
+==========================*/
+
+.features-wrapper{
+    &.features-wrapper-one{
+        padding-bottom: 70px;
+        border-bottom: 1px solid #CED0D4;
+    }
+}
+.features-style-one{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    & .shape{
+        position: absolute;
+        z-index: -1;
+        & span{
+            border-radius: 50%;
+        }
+        &.shape-one{
+            top: 30%;
+            left: 10%;
+            & span{
+                width: 20px;
+                height: 20px;
+                background-color: #fff;
+            }
+            
+        }
+        &.shape-two{
+            top: 45px;
+            left: 50%;
+            @include transform(translateX(-50%));
+            & span{
+                width: 570px;
+                height: 570px;
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+        &.shape-three{
+            top: 85px;
+            right: 30%;
+            & span{
+                width: 20px;
+                height: 20px;
+                background-color: rgba(255, 255, 255, 0.3);
+            }
+        }
+        &.shape-four{
+            right: 10%;
+            bottom: 30%;
+            & span{
+                width: 50px;
+                height: 50px;
+                background-color: rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+}

@@ -1,0 +1,187 @@
+
+/*=========================
+    11. Start Testimonial css 
+==========================*/
+
+/* Testimonial style one */ 
+
+.testimonial-style-one{
+    & .testimonial-slider-one{
+        margin-left: -15px;
+        margin-right: -15px;
+        & .testimonial-item{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+    & .text-wrapper{
+        & p{
+            margin-bottom: 25px;
+        }
+        & .testimonial-arrows{
+            & .slick-arrow{
+                cursor: pointer;
+                z-index: 1;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 1px solid $blue-dark;
+                color: $blue-dark;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include transition(.3s);
+                &.next{
+                    margin-left: 10px;
+                }
+                &:hover{
+                    background-color: $blue-dark;
+                    color: #fff;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+    & .testimonial-item{
+        position: relative;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        padding:50px 50px 60px;
+        z-index: 1;
+        @media #{$lg}{
+            padding:50px 20px 60px; 
+        }
+        @media #{$xs}{
+            padding:50px 30px 60px; 
+        }
+        &:after{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            content: '';
+            width: 70px;
+            height: 70px;
+            background: url(../images/quote.png) no-repeat center;
+            background-size: contain;
+            z-index: -1;
+        }
+        & p{
+            margin-bottom: 45px;
+        }
+        & .author-thumb-title{
+            display: flex;
+            & .author-thumb{
+                flex: 0 0 70px;
+                width: 70px;
+                height: 70px;
+                margin-right: 25px;
+                & img{
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+            & .author-title{
+                & h5{
+                    margin-bottom: 10px;
+                    text-transform: capitalize;
+                }
+                & p.position{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Testimonial style Two */ 
+
+.testimonial-style-two{
+    position: relative;
+    z-index: 1;
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 530px;
+        background: url(../images/bg/testimonial-bg-1.jpg) no-repeat center;
+        background-size: cover;
+        z-index: -1;
+    }
+    & .testimonial-item{
+        background-color: #fff;
+        padding: 50px 40px 40px;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-bottom: 50px;
+        @media #{$xs}{
+            padding:50px 30px 60px; 
+        }
+        & .testimonial-content{
+            & .author-thumb-title{
+                padding-bottom: 20px;
+                border-bottom: 1px solid #E7E7E9;
+                margin-bottom: 10px;
+                & .author-thumb{
+                    margin-right: 30px;
+                }
+                & .author-title{
+                    & h5{
+                        margin-bottom: 5px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+    & .testimonial-slider-two{
+        margin-left: -15px;
+        margin-right: -15px;
+        & .testimonial-item{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+}
+
+/* Testimonial style Three */ 
+
+.testimonial-style-three{
+    & .text-wrapper{
+        padding-right: 100px;
+        @media #{$lg}{
+            padding-right: 50px;
+        }
+        @media #{$xm}{
+            padding-right: 0;
+        }
+        & .testimonial-item{
+            & .testimonial-content{
+                & p{
+                    margin-bottom: 40px;
+                }
+                & .author-thumb-title{
+                    & .author-thumb{
+                        flex: 0 0 80px;
+                        max-width: 80px;
+                        height: 80px;
+                        margin-right: 30px;
+                        & img{
+                            width: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                    & .author-title{
+                        & h5{
+                            margin-bottom: 5px;
+                        }
+                        & p{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

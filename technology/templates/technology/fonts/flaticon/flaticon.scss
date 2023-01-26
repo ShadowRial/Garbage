@@ -1,0 +1,133 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?359a8f9b6cfd43e34ebe702d244a10e1") format("truetype"),
+url("./flaticon.woff?359a8f9b6cfd43e34ebe702d244a10e1") format("woff"),
+url("./flaticon.woff2?359a8f9b6cfd43e34ebe702d244a10e1") format("woff2"),
+url("./flaticon.eot?359a8f9b6cfd43e34ebe702d244a10e1#iefix") format("embedded-opentype"),
+url("./flaticon.svg?359a8f9b6cfd43e34ebe702d244a10e1#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "united": "\f101",
+    "technology-products": "\f102",
+    "tick": "\f103",
+    "sound-mixer": "\f104",
+    "idea": "\f105",
+    "web-development": "\f106",
+    "shuttle": "\f107",
+    "project-management": "\f108",
+    "high-performance": "\f109",
+    "analytics": "\f10a",
+    "rating": "\f10b",
+    "medal": "\f10c",
+    "target": "\f10d",
+    "crown": "\f10e",
+    "customer-service": "\f10f",
+    "email": "\f110",
+    "content": "\f111",
+    "vision": "\f112",
+    "graphic-design": "\f113",
+    "digital-marketing": "\f114",
+    "email-marketing": "\f115",
+    "responsive": "\f116",
+    "line-graph": "\f117",
+    "loupe": "\f118",
+    "question-mark": "\f119",
+    "easy-to-use": "\f11a",
+    "process": "\f11b",
+);
+
+.flaticon-united:before {
+    content: map-get($flaticon-map, "united");
+}
+.flaticon-technology-products:before {
+    content: map-get($flaticon-map, "technology-products");
+}
+.flaticon-tick:before {
+    content: map-get($flaticon-map, "tick");
+}
+.flaticon-sound-mixer:before {
+    content: map-get($flaticon-map, "sound-mixer");
+}
+.flaticon-idea:before {
+    content: map-get($flaticon-map, "idea");
+}
+.flaticon-web-development:before {
+    content: map-get($flaticon-map, "web-development");
+}
+.flaticon-shuttle:before {
+    content: map-get($flaticon-map, "shuttle");
+}
+.flaticon-project-management:before {
+    content: map-get($flaticon-map, "project-management");
+}
+.flaticon-high-performance:before {
+    content: map-get($flaticon-map, "high-performance");
+}
+.flaticon-analytics:before {
+    content: map-get($flaticon-map, "analytics");
+}
+.flaticon-rating:before {
+    content: map-get($flaticon-map, "rating");
+}
+.flaticon-medal:before {
+    content: map-get($flaticon-map, "medal");
+}
+.flaticon-target:before {
+    content: map-get($flaticon-map, "target");
+}
+.flaticon-crown:before {
+    content: map-get($flaticon-map, "crown");
+}
+.flaticon-customer-service:before {
+    content: map-get($flaticon-map, "customer-service");
+}
+.flaticon-email:before {
+    content: map-get($flaticon-map, "email");
+}
+.flaticon-content:before {
+    content: map-get($flaticon-map, "content");
+}
+.flaticon-vision:before {
+    content: map-get($flaticon-map, "vision");
+}
+.flaticon-graphic-design:before {
+    content: map-get($flaticon-map, "graphic-design");
+}
+.flaticon-digital-marketing:before {
+    content: map-get($flaticon-map, "digital-marketing");
+}
+.flaticon-email-marketing:before {
+    content: map-get($flaticon-map, "email-marketing");
+}
+.flaticon-responsive:before {
+    content: map-get($flaticon-map, "responsive");
+}
+.flaticon-line-graph:before {
+    content: map-get($flaticon-map, "line-graph");
+}
+.flaticon-loupe:before {
+    content: map-get($flaticon-map, "loupe");
+}
+.flaticon-question-mark:before {
+    content: map-get($flaticon-map, "question-mark");
+}
+.flaticon-easy-to-use:before {
+    content: map-get($flaticon-map, "easy-to-use");
+}
+.flaticon-process:before {
+    content: map-get($flaticon-map, "process");
+}

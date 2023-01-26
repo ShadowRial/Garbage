@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?359a8f9b6cfd43e34ebe702d244a10e1") format("truetype"),
+url("./flaticon.woff?359a8f9b6cfd43e34ebe702d244a10e1") format("woff"),
+url("./flaticon.woff2?359a8f9b6cfd43e34ebe702d244a10e1") format("woff2"),
+url("./flaticon.eot?359a8f9b6cfd43e34ebe702d244a10e1#iefix") format("embedded-opentype"),
+url("./flaticon.svg?359a8f9b6cfd43e34ebe702d244a10e1#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-united:before {
+    content: "\f101";
+}
+.flaticon-technology-products:before {
+    content: "\f102";
+}
+.flaticon-tick:before {
+    content: "\f103";
+}
+.flaticon-sound-mixer:before {
+    content: "\f104";
+}
+.flaticon-idea:before {
+    content: "\f105";
+}
+.flaticon-web-development:before {
+    content: "\f106";
+}
+.flaticon-shuttle:before {
+    content: "\f107";
+}
+.flaticon-project-management:before {
+    content: "\f108";
+}
+.flaticon-high-performance:before {
+    content: "\f109";
+}
+.flaticon-analytics:before {
+    content: "\f10a";
+}
+.flaticon-rating:before {
+    content: "\f10b";
+}
+.flaticon-medal:before {
+    content: "\f10c";
+}
+.flaticon-target:before {
+    content: "\f10d";
+}
+.flaticon-crown:before {
+    content: "\f10e";
+}
+.flaticon-customer-service:before {
+    content: "\f10f";
+}
+.flaticon-email:before {
+    content: "\f110";
+}
+.flaticon-content:before {
+    content: "\f111";
+}
+.flaticon-vision:before {
+    content: "\f112";
+}
+.flaticon-graphic-design:before {
+    content: "\f113";
+}
+.flaticon-digital-marketing:before {
+    content: "\f114";
+}
+.flaticon-email-marketing:before {
+    content: "\f115";
+}
+.flaticon-responsive:before {
+    content: "\f116";
+}
+.flaticon-line-graph:before {
+    content: "\f117";
+}
+.flaticon-loupe:before {
+    content: "\f118";
+}
+.flaticon-question-mark:before {
+    content: "\f119";
+}
+.flaticon-easy-to-use:before {
+    content: "\f11a";
+}
+.flaticon-process:before {
+    content: "\f11b";
+}

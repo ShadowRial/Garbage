@@ -1,0 +1,40 @@
+
+/*=========================
+    04. Start About css 
+==========================*/
+
+.about-style-one{
+    & .text-wrapper{
+        padding-left: 100px;
+        @media #{$lg}{
+            padding-left: 0;
+        }
+        @media #{$xm}{
+            padding-left: 0;
+        }
+        & p{
+            margin-bottom: 30px;
+        }
+    }
+}
+.single-progress-item{
+    & .progress-title{
+        & h5{
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            & span{
+                float: right;
+            }
+        }
+    }
+    & .progress{
+        height: 10px;
+        border-radius: 5px;
+        background-color: #F8F8F8;
+        & .progress-bar{
+            background-color: $yellow-dark;
+        }
+    }
+}

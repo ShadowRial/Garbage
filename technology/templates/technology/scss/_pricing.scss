@@ -1,0 +1,263 @@
+
+/*=========================
+    09. Start Pricing css 
+==========================*/
+
+
+/* Check List CSS */
+
+.check-list-one{
+    & li{
+        display: flex;
+        align-items: center;
+        &:before{
+            display: inline-flex;
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Pro';
+            font-weight: 400;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #CED0D4;
+            margin-right: 10px;
+        }
+        &.bg-one{
+            &:before{
+                background-color: rgba(7, 213, 172, 0.2);
+                color: #07D5AC;
+            }
+        }
+        &.bg-two{
+            &:before{
+                background-color: rgba(158, 89, 255, 0.2);
+                color: $purple-dark;
+            }
+        }
+        &.check{
+            &:before{
+                background-color: rgba(89, 86, 233, 0.2);
+                color: #5956E9;
+            }
+        }
+        &.uncheck{
+            &:before{
+                background-color: rgba(255, 71, 87, 0.2);
+                content: '\f00d';
+                font-weight: 400;
+                color: #FF4757;
+            }
+        }
+    }
+}
+.check-list-two{
+    & li{
+        font-weight: 500;
+        color: $heading;
+        &.uncheck{
+            text-decoration: line-through;
+        }
+    }
+}
+
+/* Switch Toggle CSS */
+
+.switch-toggle-btn{
+    & .switch-box {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        & input{
+            opacity: 0;
+            width: 0;
+            height: 0;
+            &:checked + .switch-slide{
+                &:before{
+                    transform: translateX(26px);
+                }
+            }
+        }
+        & .switch-slide{
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, #DC3545 -37.5%, #FD7E14 100%);
+            transition: 0.4s;
+            transform: translate(0px, 0px);
+            transition: 0.6s ease transform, 0.6s;
+            &:before{
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                left: 4px;
+                bottom: 4px;
+                background-color: #fff;
+                transition: 0.4s;
+            }
+            &.round{
+                border-radius: 34px;
+                &:before{
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    
+}
+
+
+/* Pricing One CSS  */
+
+.pricing-item-one{
+    padding: 50px 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    @media #{$lg}{
+        padding: 50px 20px;
+    }
+    @media #{$xs}{
+        padding: 50px 20px;
+    }
+    &:hover{
+        & .pricing-header{
+            & .icon{
+                & i{
+                    color: #FF6600;
+                }
+            }
+        }
+    }
+    & .pricing-header{
+        padding-bottom: 30px;
+        border-bottom: 1px solid #E7E7E9;
+        & .icon{
+            flex: 0 0 80px;
+            max-width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            font-size: 30px;
+            background-color: rgba(158, 89, 255, 0.1);
+            color: $purple-dark;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 25px;
+        }
+        & .title{
+            & span.plan{
+                color: $heading;
+                font-weight: 500;
+            }
+            & h2.price{
+                & span.sign{
+                    font-size: 16px;
+                    vertical-align: super;
+                }
+                & span.duration{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    & .pricing-body{
+        margin-top: 35px;
+        & ul{
+            margin-bottom: 35px;
+            &.check-list-one{
+                & li{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        & .main-btn{
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+/* Pricing Two CSS  */
+
+.pricing-item-two{
+    padding: 40px 50px 50px;
+    background: #fff;
+    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.05);
+    &.popular-pricing{
+        background: linear-gradient(90deg, #DC3545 -37.5%, #FD7E14 100%);
+        box-shadow: none;
+        padding: 50px 50px 60px;
+        @include transform(translateY(-15px));
+        @media #{$xs}{
+            @include transform(translateY(0px));
+        }
+        & .pricing-header{
+            & .title{
+                & span{
+                    &.plan{
+                        color: #fff;
+                    }
+                }
+                & h2.price{
+                    color: #fff;
+                }
+            }
+        }
+        & .pricing-body{
+            & ul{
+                & li{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    & .pricing-header{
+        margin-bottom: 30px;
+        & .title{
+            margin-bottom: 20px;
+            & span{
+                &.plan{
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: $heading;
+                    margin-bottom: 5px;
+                }
+            }
+            & h2.price{
+                & span{
+                    &.sign{
+                        font-size: 16px;
+                        font-weight: 600;
+                        vertical-align: super;
+                    }
+                    &.duration{
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+                &.price-two{
+                    display: none;
+                }
+            }
+        }
+    }
+    & .pricing-body{
+        & ul{
+            margin-bottom: 35px;
+            &.check-list-two{
+                & li{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

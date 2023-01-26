@@ -1,0 +1,242 @@
+
+/*=========================
+    16. Start Footer css 
+==========================*/
+
+
+/* Footer Area */
+
+.footer-area{
+    & .footer-widget{
+        & .widget{
+            & h4.widget-title{
+                margin-bottom: 20px;
+            }
+            &.about-widget{
+                & .site-branding{
+                    margin-bottom: 20px;
+                }
+                & P{
+                    margin-bottom: 30px;
+                }
+                & ul.social-link{
+                    & li{
+                        margin-right: 5px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        & a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+            &.footer-nav-widget{
+                & ul.footer-nav{
+                    & li{
+                        padding-bottom: 10px;
+                        &:last-child{
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+            }
+            &.contact-info-widget{
+                & ul.info-list{
+                    & li{
+                        margin-bottom: 12px;
+                        & span{
+                            line-height: 26px;
+                            display: flex;
+                            align-items: flex-start;
+                            & i{
+                                margin-right: 10px;
+                                margin-top: 5px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            &.newsletter-widget{
+                & .newsletter-content{
+                    & p{
+                        margin-bottom: 25px;
+                    }
+                    & form{
+                        & .form_group{
+                            & .newsletter-btn{
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 60px;
+                                height: 60px;
+                                border-radius: 0px 4px 4px 0px;
+                                background: $blue-dark;
+                                color: #fff;
+                            }
+                        }
+                        & .form_control{
+                            background-color: #f8f8f8;
+                            border-radius: 4px;
+                            color: #6C727D;
+                            &::placeholder{
+                                color: #6C727D;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    & .footer-copyright{
+        border-top: 1px solid #CED0D4;
+        padding: 30px 0 35px;
+        & .text{
+            & p{
+                color: $heading;
+            }
+        }
+    }
+}
+
+/* Footer Default */
+
+.footer-default{
+    & .footer-widget{
+        & .widget{
+            &.about-widget{
+                & ul.social-link{
+                    & li{
+                        & a{
+                            background-color: #FFFFFF;
+                            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+                            color: $heading;
+                            &:hover{
+                                background-color: $blue-dark;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            &.footer-nav-widget{
+                & ul.footer-nav{
+                    & li{
+                        & a{
+                            &:hover{
+                                color: $blue-dark;
+                            }
+                        }
+                    }
+                }
+            }
+            &.contact-info-widget{
+                & ul.info-list{
+                    & li{
+                        & span{
+                            &:hover{
+                                & a{
+                                    color: $blue-dark;
+                                }
+                            }
+                            & i{
+                                color: $blue-dark;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Footer White */
+
+.footer-white{
+    & .footer-widget{
+        & p{
+            color: #fff;
+        }
+        & .widget{
+            & h4.widget-title{
+                color: #fff;
+            }
+            &.about-widget{
+                & ul.social-link{
+                    & li{
+                        & a{
+                            background-color: #fff;
+                            color: #0A1426;
+                            &:hover{
+                                background-color: $yellow-dark;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            &.footer-nav-widget{
+                & ul.footer-nav{
+                    & li{
+                        & a{
+                            color: #fff;
+                            &:hover{
+                                color: $yellow-dark;
+                            }
+                        }
+                    }
+                }
+            }
+            &.contact-info-widget{
+                & ul.info-list{
+                    & li{
+                        & span{
+                            color: #fff;
+                            &:hover{
+                                & a{
+                                    color: $yellow-dark;
+                                }
+                            }
+                            & i{
+                                color: $yellow-dark;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            &.newsletter-widget{
+                & .newsletter-content{
+                    & form{
+                        & .form_group{
+                            & .newsletter-btn{
+                                
+                                background: linear-gradient(90deg, #DC3545 -37.5%, #FD7E14 100%);
+                            }
+                        }
+                        & .form_control{
+                            height: 60px;
+                            background-color: #fff;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    & .footer-copyright{
+        & .text{
+            & p{
+                color: #fff;
+            }
+        }
+    }
+}

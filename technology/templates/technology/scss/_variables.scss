@@ -1,0 +1,30 @@
+// Font Family
+
+$poppins: 'Poppins', sans-serif;
+
+// Colors
+
+$heading: #0A1426;
+
+$text-color: #6C727D;
+
+$blue-dark: #0061FE;
+
+$purple-light: #9E59FF;
+
+$purple-dark: #5956E9;
+
+$yellow-dark: #FD7E14;
+
+
+
+// Responsive Variables
+
+$lp: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$xl: 'only screen and (min-width: 1200px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xm:'(max-width: 991px)';
+$xs:'(max-width: 767px)';
+$xss:'(max-width: 400px)';
+$sm: 'only screen and (min-width: 410px) and (max-width: 767px)';

@@ -1,0 +1,141 @@
+
+/*=========================
+    15. Start Contact css 
+==========================*/
+/* Contact Form */ 
+.contact-form{
+    & form{
+        & .form_control{
+            height: 56px;
+            background-color: #F8F8F8;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #6C727D;
+            &::placeholder{
+                color: #6C727D;
+            }
+        }
+        & textarea.form_control{
+            height: 120px;
+        }
+    }
+}
+.map-box{
+    & iframe{
+        border:none;
+        display: inherit;
+        width: 100%;
+    }
+}
+
+/* Contact Information Css */ 
+
+.contact-information-area{
+    & .text-weapper{
+        & p{
+            margin-bottom: 20px;
+        }
+        .information-item{
+            max-width: 350px;
+            & .icon{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 0 0 70px;
+                background-color: #F8F8F8;
+                font-size: 25px;
+                margin-right: 25px;
+                & i{
+                    color: $yellow-dark;
+                }
+            }
+            & .text{
+                & h5{
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    & .img-holder{
+        position: relative;
+        & .shape-icon{
+            position: absolute;
+            @media #{$xm}{
+                display: none;
+            }
+            &.shape-icon-one{
+                top: 40%;
+                left: -100px;
+            }
+        }
+    }
+}
+
+/* Contact Style one Css */ 
+
+.contact-style-one{
+    & .contact-wrapper{
+        position: relative;
+        padding: 70px 100px 80px;
+        background-color: #fff;
+        box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.1);
+        margin-bottom: -240px;
+        @media #{$xm}{
+            padding: 70px 30px 80px;
+        }
+        @media #{$xss}{
+            padding: 70px 15px 80px;
+        }
+    }
+}
+
+/* Contact Style Two Css */ 
+
+.contact-style-two{
+    & .contact-wrapper{
+        position: relative;
+        padding: 60px 70px 70px;
+        background-color: #fff;
+        box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.1);
+        @media #{$xm}{
+            padding: 60px 30px 70px;
+        }
+        @media #{$xss}{
+            padding: 60px 15px 70px;
+        }
+    }
+    & .contact-wrapper-one{
+        background-color: #F8F8F8;
+        & .contact-form{
+            & form{
+                & .form_control{
+                    background-color: #fff;
+                }
+                & textarea.form_control{
+                    height: 250px;
+                }
+            }
+        }
+    }
+    & .contact-form{
+        & form{
+            & textarea.form_control{
+                height: 150px;
+            }
+        }
+    }
+}
+
+/* Contact Map Css */ 
+
+.contact-page-map{
+    & .map-box{
+        & iframe{
+            height: 620px;
+        }
+    }
+}
