@@ -7,4 +7,4 @@ def containers_list(request):
 
 def post_list(request):
     buckets = Containers.objects.all()
-    return render(request, 'blog/html/post_list.html', {"bukets" : buckets})
+    return render(request, 'techology/html/buckets_list.html', {"bukets" : buckets})
