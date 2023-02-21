@@ -1,9 +1,21 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
-    <head>
-        <title>Список баков</title>
-    </head>
-    <body>
+<head>
+    <title>Список баков</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/bucket.css' %}">
+</head>
+<body>
+<h2>Список баков</h2>
 
-    </body>
+<div>
+    {% for bucket in buckets %}
+    <h3 class="address"><a href="">{{ bucket.address }}</a></h3>
+    <p>Заполненность: {{ bucket.fullness }} {{ bucket.information }} </p>
+    <h4 class="is_open">{{ bucket.is_open }}</h4>
+    {% endfor %}
+</div>
+</body>
 </html>
