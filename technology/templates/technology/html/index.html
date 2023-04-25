@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,12 +48,10 @@
       <nav class="pushy pushy-left">
         <ul class="list-unstyled">
             <li><a href="#home">На главную</a></li>
-            <li><a href="#feat">Особенности</a></li>
-            <li><a href="#about">О нас</a></li>
+            <li><a href="#feat">Используемые технологии</a></li>
+            <li><a href="#about">Бот</a></li>
             <li><a href="#news">Участники проекта</a></li>
-            <li><a href="#history">Используемые технологии</a></li>
-            <li><a href="#photos">Фотографии с места</a></li>
-            <li><a href="#contact">Просмотреть информацию о баках</a></li>
+            <li><a href="#history">Использование</a></li>
             <li><a href="http://www.themeinthebox.com/ourtheme/mountain-king-bootstrap-template/" target="_blank">Связаться с нами</a></li>
         </ul>
       </nav>
@@ -80,28 +78,31 @@
 						<strong></strong></h1>
                         <p>Данный проект поможет улучшить переработку<br>
 мусора в мире и сделает его чище</p>
-                        <p><a class="btn btn-primary btn-lg" role="button" href="http://shadowria1.pythonanywhere.com/containers/">Посмотреть информацию о баках</a> <a target="_blank" href="https://aspc-edu.ru/information/about/" class="btn btn-lg btn-danger" role="button">Связаться с нами</a></p>
+                        <p><a class="btn btn-primary btn-lg" role="button" href="http://127.0.0.1:8000/containers/">Посмотреть информацию о баках</a> <a target="_blank" href="https://aspc-edu.ru/information/about/" class="btn btn-lg btn-danger" role="button">Связаться с нами</a></p>
                     </div>
                 </div>
             </div>
         </header>
         <section id="feat">
+            <div class="777">
+                <h3 align="center">Использованные технологии:</h3>
+            </div>
             <div class="container">
                 <div class="row features">
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="100ms">
                         <span class="typcn typcn-pencil x3"></span>
-                        <h4>Процесс разработки</h4>
-                        <p>Процесс разработки будет описан в дальнейшем</p>
+                        <h4>Django</h4>
+                        <p>Сайт был полностью написан на Django - фреймворке для python</p>
                     </div>
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="300ms">
                         <span class="typcn typcn-camera-outline x3"></span>
-                        <h4>Фото</h4>
-                        <p>(Просто для примера)</p>
+                        <h4>Arduino</h4>
+                        <p>Ардуино отвечает за физическую оболочку, именно она позволяет крышке открываться</p>
                     </div>
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="500ms">
                         <span class="typcn typcn-bookmark x3"></span>
-                        <h4>Технология</h4>
-                        <p>Технология в разработке</p>
+                        <h4>Telegram bot</h4>
+                        <p>С помощью телеграм бота мы можем удобно отслеживать заполненность баков</p>
                     </div>
                 </div>
             </div>
@@ -114,20 +115,9 @@
                         <div class="col-md-6 opaline col-md-offset-6">
                             <div class="row">
                                 <div class="col-md-offset-1 col-md-10">
-                                    <h3>Ligula Mattis Ornare Ultricies</h3>
-                                    <h5>Pellentesque Cursus Amet Parturient Etiam</h5>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                </div>
-                            </div>
-                            <div class="row text-center">
-                                <!-- set the numbers in assets/js/scripts.js  -->
-                                <div class="col-md-4 boxes col-xs-6 col-xs-offset-3 col-lg-4 col-lg-offset-1 col-md-offset-1 col-sm-6 wow fadeInUp">
-                                    <h5>Ultricies</h5>
-                                    <h3 class="odometer 01">00000</h3>
-                                </div>
-                                <div class="col-md-4 boxes col-xs-6 col-xs-offset-3 col-lg-4 col-lg-offset-2 col-md-offset-2 col-sm-6 wow fadeInUp" data-wow-delay="300ms">
-                                    <h5>Fermentum</h5>
-                                    <h3 class="odometer 02">00000</h3>
+                                    <h3>Телеграм бот</h3>
+                                    <p>В телеграме вы можете получать уведомления!</p>
+                                    <p>Например вы можете отслеживать заполнение конкретного бака. Так же можно получать уведомления о всех баках, посмотреть адреса контейнеров и узнать краткую информацию о них. Таким образом можно получать уведомления прямо на телефон или компьютер!</p>
                                 </div>
                             </div>
                         </div>
@@ -140,11 +130,10 @@
                 <div class="row">
                     <div class="col-md-7">
                         <h2>Участники проекта</h2>
-                        <p>Было бы более справедливо, если бы каждый участник написал о себе сам. Но пока здесь будет общая информация:</p>
-                        <p>Ермаков А. - отвественный за разработку и тестирование сайта, телеграм бота</p>
-                        <p>Стульнов Е. - проектирование объектов</p>
                         <p>Гончар Н.В. - аналитик, консультант</p>
                         <p>Рашитова Р.Р. - ответственная за документацию</p>
+                        <p>Стульнов Е. - проектирование объектов</p>
+                        <p>Ермаков А.Д - отвественный за разработку и тестирование сайта, телеграм бота</p>
                         <p>Ж. - сборка схемы</p>
                     </div>
                     <div class="col-md-5">
@@ -163,11 +152,10 @@
                         <div class="col-md-6 opaline">
                             <div class="row">
                                 <div class="col-md-10 col-md-offset-1">
-                                    <p class="lead"><i>Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</i></p>
-                                    <p><i>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</i></p>
-                                    <h6 class="lead"> – Fermentum Dapibus</h6>
-                                    <p><small>Nibh Etiam Risus Bibendum<br>
-        Nullam id dolor id nibh ultricies vehicula ut id elit.</small></p>
+                                    <p class="lead"><i>Как это можно использовать?</i></p>
+                                    <p><i>Данный проект это лишь прототип, ведь возможности для автоматизации не ограничены.</i></p>
+                                    <p class="lead">Например похожая технология используется в проектах умных домов.</p>
+
                                 </div>
                             </div>
                         </div>
@@ -177,31 +165,7 @@
         </section>
         <section id="photos" class="gallery wow fadeInUp" data-wow-delay="300ms">
         </section>
-        <section class="clients wow fadeInUp" data-wow-delay="300ms">
-            <div class="container">
 
-            </div>
-        </section>
-        <section id="contact" class="prefooter wow fadeInUp" data-wow-delay="300ms">
-            <!-- change the image in style.css to the class .prefooter .container-fluid [approximately row 154] -->
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h3>Maecenas sed diam eget risus varius<br> blandit sit amet non magna.</h3>
-                            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Your Email Here...">
-                                    <br>
-                                    <button type="button" class="btn btn-danger">Submit Newsletter</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <footer>
             <div class="container">
                 <div class="row">

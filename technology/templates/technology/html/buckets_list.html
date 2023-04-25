@@ -14,7 +14,8 @@
     {% for bucket in buckets %}
     <h3 class="address"><a href="">{{ bucket.address }}</a></h3>
     <p>Заполненность: {{ bucket.fullness }} {{ bucket.information }} </p>
-    <h4 class="is_open">{{ bucket.is_open }}</h4>
+    <h4 class="is_open">{% if bucket.is_open %}Закрыт {% else %}Открыт {% endif %}
+    </h4>
     {% endfor %}
 </div>
 </body>
